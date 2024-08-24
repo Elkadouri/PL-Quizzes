@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+:root{
+  --txt-primary:#fff ;
+  --bg-primary:#000 ;
+  --border-clr:#8388926c;
+  --blue-clr:#61dafb;
+  --bg-clr:#282c34;
+  --section-clr: rgba(0, 0, 34, 0.986);
+}
+
+.light{
+  --txt-primary:#000 ;
+  --bg-primary:#fff ;
+}
+
+
+.content{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff; /* Background of the scrollbar track */
+  border-radius: 4px; /* Optional: adds a rounded corner to the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#61dafb80; /* Color of the scrollbar handle */
+  border-radius: 10px; /* Optional: adds a rounded corner to the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #61dafb; /* Color of the scrollbar handle when hovered */
+}
+
+
+/* scroll-up */
+
+
+
+.scroll-up {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: #088dfa;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.scroll-up:hover{
+  transform: translateY(-6px);
+}
+
+.scroll-up.show {
+  opacity: 1;
+  animation: fadeIn 0.5s forwards;
+}
+
+.scroll-up.hide {
+  opacity: 0;
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

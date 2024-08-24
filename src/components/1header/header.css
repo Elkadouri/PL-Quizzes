@@ -1,0 +1,56 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background-color:var(--section-clr);
+    color: white;
+}
+
+  
+  .logo h1 {
+    font-size: 24px;
+    margin: 0;
+    color: var(--blue-clr);
+  }
+/*   
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    column-gap: 20px;
+  }
+
+  @media (width < 767px) {
+    .navigation ul{
+        display: none;
+    }
+  }
+  
+  
+  .navigation a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navigation a:hover {
+    color: var(--blue-clr); 
+  }
+   */
+  .cta-button .start-quiz-btn {
+    padding: 6px 12px;
+    background-color: #21a1f1;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .cta-button .start-quiz-btn:hover {
+    background-color: #1290f7;
+  }
+  
