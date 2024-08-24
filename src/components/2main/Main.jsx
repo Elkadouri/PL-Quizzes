@@ -93,15 +93,15 @@ export default function Main() {
   const [showResult, setShowResult] = useState(false);
 
   // Load the sound
-  const clickSound = new Audio("/click-sound.mp3");
+  const clickSound = new Audio("./click-sound.mp3");
   clickSound.volume = 0.3;
   clickSound.playbackRate = 1.4;
 
-  const endSound = new Audio("/end.mp3");
+  const endSound = new Audio("./end.mp3");
   endSound.volume = 0.9;
   endSound.playbackRate = 1.2;
 
-  const nextSound = new Audio("/next-sound.mp3");
+  const nextSound = new Audio("./next-sound.mp3");
   nextSound.volume = 0.5;
 
 
